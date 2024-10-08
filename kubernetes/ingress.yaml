@@ -6,7 +6,7 @@ metadata:
     name: llm-gpu-deployment
 spec:
   rules:
-  - host: user-jonasmorin-129470-0.lab.sspcloud.fr
+  - host: user-jonasmorin-967767-0.lab.sspcloud.fr
     http:
       paths:
       - pathType: Prefix
