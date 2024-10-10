@@ -13,4 +13,4 @@ service:
   namespace: user-jonasmorin
 
 ingress:
-  host: user-jonasmorin-677474-0.lab.sspcloud.fr
+  host: jonasmorin-llm-serving.lab.sspcloud.fr
