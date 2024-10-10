@@ -1,18 +1,18 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: llm-serving
+  name: {{ .Chart.Name }}
   labels:
-    name: llm-serving
+    name: {{ .Chart.Name }}
 spec:
   rules:
-  - host: user-jonasmorin-677474-0.lab.sspcloud.fr
+  - host: {{ .Values.ingress.host }}
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: llm-serving
+            name: {{ .Chart.Name }}
             port: 
-              number: 8000
+              number: {{ .Values.general.portnumber }}
